@@ -43,38 +43,38 @@ width: 100%;
     display: flex;
     left: 50%;
     transform: translate(-50%);
+    text-align: center;
+    
 }
 .btns button{
     font-weight: bold;
     color: white;
     padding: 15px 25px; 
     font-size: 30px;
-    margin-right: 10px;
     border-radius: 5px;
     cursor: pointer;
 }
-@media (max-width:430px) {
-    .btns button{
-        font-weight: bold;
-        color: white;
-        padding: 12px 22px; 
-        font-size: 25px;
-        margin-right: 10px;
-        border-radius: 5px;
-        cursor: pointer;
+/* @media (max-width:230px) {
+    .btns {
+       flex-wrap:wrap !important;
         
     }
-}
-.btns #start{
+    .btns button{
+        
+        margin:10px auto;
+    }
+} */
+.btns #start{ 
     background-color: green;
     border: 2px solid green;
     transition: background-color .3s ease-in-out;
-    margin-right: 0px;
 }
 .btns #reset{
     background-color: red;
     border: 2px solid red;
     transition: background-color .3s ease-in-out;
+    padding: 12px 20px;
+    margin-right: 60px;
 }
 .btns #stop{
     border: 2px solid yellow;

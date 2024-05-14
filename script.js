@@ -23,7 +23,7 @@ function togglestopwatch() {
     }
 }
 function start() {
-    starts.textContent="Stop"
+    starts.innerHTML='<i class="fa fa-pause" style="font-size:36px;"></i>'
 
     watch = true
     stopwatch()
@@ -36,7 +36,7 @@ function start() {
 }
 function stop() {
     watch=false
-    starts.textContent="Start"
+    starts.innerHTML='<i class="fa fa-play" style="font-size:36px;"></i>'
     if (milisec!==0) {
         digit.forEach(dg=>{
             dg.style.animation=" blink-animation 0.5s infinite alternate"
