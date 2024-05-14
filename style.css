@@ -35,7 +35,8 @@ width: 100%;
 }
 .time .txt{
     font-size: 7vw;
-   color: sandybrown;
+   /* color: sandybrown; */
+   color: #b565a7;
 }
 .btns{
     position: absolute;
