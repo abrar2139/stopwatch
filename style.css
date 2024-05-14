@@ -39,7 +39,7 @@ width: 100%;
 }
 .btns{
     position: absolute;
-    bottom: 40px;
+    bottom: 80px;
     display: flex;
     left: 50%;
     transform: translate(-50%);
