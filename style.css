@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100vh;
+    width: 100%;
+    background-color: silver;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.stopwatch{
+position: relative;
+height: 100vh;
+width: 100%;
+}
+.time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   margin-top: 130px;
+}
+.time .col{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.time span{
+    font-size: 16vw;
+    color: white;
+    font-weight: bold;
+}
+.time .txt{
+    font-size: 7vw;
+   color: sandybrown;
+}
+.btns{
+    position: absolute;
+    bottom: 40px;
+    display: flex;
+    left: 50%;
+    transform: translate(-50%);
+}
+.btns button{
+    font-weight: bold;
+    color: white;
+    padding: 15px 25px; 
+    font-size: 30px;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+@media (max-width:430px) {
+    .btns button{
+        font-weight: bold;
+        color: white;
+        padding: 12px 22px; 
+        font-size: 25px;
+        margin-right: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        
+    }
+}
+.btns #start{
+    background-color: green;
+    border: 2px solid green;
+    transition: background-color .3s ease-in-out;
+    margin-right: 0px;
+}
+.btns #reset{
+    background-color: red;
+    border: 2px solid red;
+    transition: background-color .3s ease-in-out;
+}
+.btns #stop{
+    border: 2px solid yellow;
+    background-color: yellow;
+    transition: background-color .3s ease-in-out;
+}
+.btns #start:hover{
+    background-color: transparent;
+    
+}
+.btns #reset:hover{
+    background-color: transparent;
+}
+.btns #stop:hover{
+    background-color: transparent;
+}
+.digit {
+    animation: none;
+    margin: 0 2px;
+}
+
+@keyframes blink-animation {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+
+
+
+
+
